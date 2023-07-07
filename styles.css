@@ -1,0 +1,182 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+
+/* Begin Styling */
+body{
+    font-family: 'Poppins', sans-serif;
+    max-width: 550px;
+    background-color: linear-gradient(180deg, #FFFFFF 0%, #F6F7FB 100%);
+    /* border: 2px solid green; */
+    user-select: none;
+    margin: 0 auto;
+}
+
+/* Header Styling */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25em;
+    /* border-bottom: 2px solid red; */
+
+}
+
+
+header img{
+    height: 34px;
+}
+
+
+/* Profile Styling */
+
+h3, h4{
+    color: white;
+}
+
+h3{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h4{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+
+.dog-profile-card{
+    /* border: 3px solid blue; */
+    position: relative;
+}
+
+
+.dog-profile-picture{
+    border-radius: 15px;
+    padding: .5em;
+}
+
+
+.dog-profile-info{
+    position: absolute;
+    bottom: 17px;
+    left: 20px;
+}
+
+.visible {
+    display: block;
+    z-index: 10;
+    border: 1cm solid pink;
+
+}
+
+.like-badge,
+.dislike-badge
+{
+    transform: rotate(-30deg);
+    position: absolute;
+    max-width: 150px;
+    top: 50px;
+    left: 20px;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+button{
+    border-radius: 50%;
+    padding: 1em;
+    border: transparent;
+    box-shadow: 0px 10px 20px 0px hsla(228, 1%, 92%, 1);
+    background-color: hsla(0, 0%, 100%, 1);
+    margin-top: 1em;
+
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.dislike-btn:hover,
+.dislike-btn:focus{
+    box-shadow: 0px 10px 20px 0px hsla(340, 36%, 89%, 1);
+    background-color: hsla(340, 100%, 95%, 1);
+}
+
+.like-btn:hover,
+.like-btn:focus{
+    box-shadow: 0px 10px 20px 0px hsla(162, 57%, 87%, 1);
+    background-color: hsla(161, 100%, 93%, 1);
+
+}
