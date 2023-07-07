@@ -33,7 +33,7 @@ function dogIsLiked(){
     currentDog.isLiked();
     // console.log(currentDog)
     currentDog = getNewDog();
-    render();
+    setTimeout( () => render(), 1000 );
 }
 
 function dogIsDisliked(){
@@ -41,7 +41,9 @@ function dogIsDisliked(){
     currentDog.isRejected();
     // console.log(currentDog);
     currentDog = getNewDog();
-    render();
+
+    setTimeout( () => render(), 1000 );
+    
 }
 
 

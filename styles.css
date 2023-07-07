@@ -63,6 +63,7 @@ select {
 body{
     font-family: 'Poppins', sans-serif;
     max-width: 550px;
+    height: 100vh;
     background-color: linear-gradient(180deg, #FFFFFF 0%, #F6F7FB 100%);
     /* border: 2px solid green; */
     user-select: none;
@@ -121,11 +122,9 @@ h4{
     left: 20px;
 }
 
-.visible {
-    display: block;
-    z-index: 10;
-    border: 1cm solid pink;
-
+.hidden {
+    display: none;
+    z-index: 1;
 }
 
 .like-badge,
@@ -136,14 +135,7 @@ h4{
     max-width: 150px;
     top: 50px;
     left: 20px;
-    display: none;
 }
-
-
-
-
-
-
 
 
 
@@ -178,5 +170,15 @@ button:hover{
 .like-btn:focus{
     box-shadow: 0px 10px 20px 0px hsla(162, 57%, 87%, 1);
     background-color: hsla(161, 100%, 93%, 1);
+
+}
+
+@media (min-width: 550px){
+    body{
+        max-width: 400px;
+    }
+
+
+
 
 }
